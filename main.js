@@ -85,4 +85,65 @@
       }
     });
   }
+
+  /* ---------- Notes feed (WordPress.com) ---------- */
+  var noteList = document.getElementById("note-list");
+  var notesSection = noteList && noteList.closest(".notes-section");
+
+  function decodeEntities(str) {
+    var el = document.createElement("div");
+    el.innerHTML = str || "";
+    return el.textContent;
+  }
+
+  function renderNotes() {
+    if (!noteList) return;
+
+    var url =
+      "https://public-api.wordpress.com/rest/v1.1/sites/xandertheron.wordpress.com/posts?number=3&fields=title,URL,date,categories";
+
+    fetch(url)
+      .then(function (res) {
+        if (!res.ok) throw new Error("feed unavailable");
+        return res.json();
+      })
+      .then(function (data) {
+        if (!data || !data.posts || !data.posts.length) throw new Error("no posts");
+        noteList.innerHTML = "";
+        data.posts.forEach(function (post) {
+          var li = document.createElement("li");
+          li.className = "note";
+
+          var a = document.createElement("a");
+          a.href = post.URL;
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.textContent = decodeEntities(post.title) || "Untitled post";
+
+          var meta = document.createElement("span");
+          meta.className = "note-meta";
+          var catNames = post.categories ? Object.keys(post.categories) : [];
+          var label = catNames.length ? catNames[0].toUpperCase() : "NOTES";
+          meta.textContent = label + " · " + yearOf(post.date);
+
+          li.appendChild(a);
+          li.appendChild(meta);
+          noteList.appendChild(li);
+
+          if (notesSection) notesSection.classList.add("is-visible");
+        });
+      })
+      .catch(function () {
+        noteList.innerHTML =
+          '<li class="note note-placeholder"><span>Notes temporarily unavailable — read them on the blog instead.</span><span class="note-meta">FIELD</span></li>';
+        if (notesSection) notesSection.classList.add("is-visible");
+      });
+  }
+
+  function yearOf(date) {
+    if (!date) return "2026";
+    return String(date).slice(0, 4);
+  }
+
+  renderNotes();
 })();

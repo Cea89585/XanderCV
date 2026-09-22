@@ -25,6 +25,7 @@
             </ul>
             <div class="nav-actions">
                 <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false"><span class="icon-dark">Dark</span><span class="icon-light">Light</span></button>
+                <button class="print-btn" type="button" onclick="window.print()">Print / PDF</button>
             </div>
         </div>
     </nav>
@@ -33,23 +34,26 @@
         <div class="container">
             <header class="hero">
                 <div>
-                    <p class="hero-eyebrow">Blog</p>
-                    <h1 class="hero-title">Writing, occasionally</h1>
+                    <p class="hero-eyebrow">Field Notes / Blog</p>
+                    <h1 class="hero-title">Notes &amp; Experiments</h1>
                     <p class="hero-summary">
-                        I write about leadership, management and life outdoors — learnings from
-                        campsites, classrooms and boardrooms.
+                        Things I&rsquo;ve learned, built or thought about — leadership lessons,
+                        behind-the-scenes stories from the places I&rsquo;ve worked, and notes on
+                        Linux, the outdoors and building things.
                     </p>
                 </div>
             </header>
 
-            <section class="blog-card">
-                <h2>Read my latest posts</h2>
-                <p>
-                    My writing lives on my WordPress blog. New posts appear there first —
-                    leadership lessons, behind-the-scenes stories from the places I&rsquo;ve worked,
-                    and thoughts on building teams that actually care.
-                </p>
-                <a class="blog-link" href="https://xandertheron.wordpress.com/" rel="noopener">Visit the blog →</a>
+            <section class="notes-section" aria-labelledby="notes-heading">
+                <p class="section-label" id="notes-heading">Latest notes</p>
+                <p class="hero-summary">My newest writing lives on my WordPress blog — the latest three are shown here.</p>
+                <ul class="note-list" id="note-list">
+                    <li class="note">
+                        <span>Loading latest notes&hellip;</span>
+                        <span class="note-meta">TECH</span>
+                    </li>
+                </ul>
+                <p><a class="blog-link" href="https://xandertheron.wordpress.com/" rel="noopener">Visit the blog &rarr;</a></p>
             </section>
         </div>
     </main>
