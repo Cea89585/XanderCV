@@ -1,0 +1,9 @@
+{
+  "name": "xandercv",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Xander Theron's CV site — static HTML, no build step.",
+  "scripts": {
+    "certs": "node tools/build-certs.mjs"
+  }
+}

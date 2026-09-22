@@ -3,33 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>About Xander Theron</title>
+    <meta name="description" content="Who I am — the story behind the CV, what I bring to a team, and what I'm looking for.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="nav" aria-label="Primary">
+        <div class="container nav-inner">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="certs.html">Certifications</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false"><span class="icon-dark">Dark</span><span class="icon-light">Light</span></button>
+                <button class="print-btn" type="button" onclick="window.print()">Print / PDF</button>
+            </div>
+        </div>
     </nav>
-    <header>
-        <h1>About me</h1>
-    </header>
 
-    <h2 class="about">Who am I?:</h2>
-        <p class="about">Well, that is up for debate, as I have done so many things in my life and experienced many things.
-             As my CV shows, I have had many different work opportunities in various settings, which sometimes leads me to wonder what I can do as a working professional.
-              I am well-adapted to be able to do any type of work, given some time to learn and gain some experience of what is expected of me.</p>
-        <p class="about">I am also very good at managing, especially people, in almost all aspects of work eg. time management and vehicles.
-             I have attended many workshops and seminars in management as well as leadership, as there is a big difference between the two. 
-            My wish/hope/dream is find a working environment, in a forward looking country, where I can be who I am, but also to bring to the table the best of what I can do.</p>    
+    <main id="main">
+        <div class="container">
+            <header class="hero">
+                <div>
+                    <p class="hero-eyebrow">About Me</p>
+                    <h1 class="hero-title">The story behind the CV</h1>
+                    <p class="hero-summary">
+                        I built my career across industries that share one thing: real people,
+                        real places, and no room for sloppy work. Fire safety, school camps,
+                        guest farms and outdoor programmes all taught me the same lesson — good
+                        management is mostly good listening.
+                    </p>
+                </div>
+            </header>
 
+            <figure class="feature-image">
+                <img src="assets/cover.jpg" alt="Xander Theron at work outdoors">
+                <figcaption>Work, wherever it takes me</figcaption>
+            </figure>
+
+            <section aria-labelledby="who-heading">
+                <p class="section-label" id="who-heading">Who I am</p>
+                <p class="prose">
+                    To be honest, that question has been up for debate my whole career. I&rsquo;ve
+                    done many different kinds of work in many different settings, and at times it
+                    has made me wonder where exactly I fit as a professional. The answer I&rsquo;ve
+                    landed on: I am someone who can walk into almost any operation and make it run
+                    better. Given a little time to learn the ropes, I adapt — and I deliver.
+                </p>
+                <p class="prose">
+                    The honest answer to the question above? I am still being shaped. It&rsquo;s
+                    why I keep learning: my wish is to find a working environment, in a
+                    forward-looking country, where I can be who I am and bring the best of what I
+                    can do.
+                </p>
+            </section>
+
+            <section aria-labelledby="bring-heading">
+                <p class="section-label" id="bring-heading">What I bring</p>
+                <p class="prose">
+                    Management is my first language — people management especially. I&rsquo;ve run
+                    teams across budgets, vehicles, stockrooms and event schedules, and I&rsquo;ve
+                    attended countless workshops and seminars on both management and leadership,
+                    because the two are genuinely different. One manages tasks; the other grows
+                    people. I try to do both.
+                </p>
+            </section>
+
+            <section aria-labelledby="looking-heading">
+                <p class="section-label" id="looking-heading">What I&rsquo;m looking for</p>
+                <p class="prose">
+                    A working environment in a forward-looking organisation where I can be myself —
+                    and bring the best of what I can do. A place that values calm problem-solving,
+                    honest communication and real leadership as much as the bottom line.
+                </p>
+            </section>
+        </div>
+    </main>
 
     <footer>
-        <p class="footer-text">&copy; 2024 Xander Theron. All rights reserved.</p>
-        <p class="footer-text">Contacts: xander.theron@gmail.com</p>
+        <div class="container">
+            <div class="footer-grid">
+                <p class="footer-name">Xander Theron</p>
+                <ul class="footer-links">
+                    <li><a href="certs.html">Certifications</a></li>
+                    <li><a href="https://github.com/Cea89585" rel="noopener">GitHub</a></li>
+                    <li><a href="mailto:xander.theron@gmail.com">Email</a></li>
+                </ul>
+            </div>
+            <p class="footer-legal">© 2024 Xander Theron. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

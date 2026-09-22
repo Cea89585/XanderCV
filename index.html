@@ -3,128 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xander Theron CV</title>
+    <title>Xander Theron — Curriculum Vitae</title>
+    <meta name="description" content="Curriculum Vitae of Xander Theron — operations and people leader with experience in fire-safety services, campsites, facilities and team management.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="nav" aria-label="Primary">
+        <div class="container nav-inner">
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="certs.html">Certifications</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false"><span class="icon-dark">Dark</span><span class="icon-light">Light</span></button>
+                <button class="print-btn" type="button" onclick="window.print()">Print / PDF</button>
+            </div>
+        </div>
     </nav>
-    <header>
-        <h1>Xander Theron</h1>
 
-    <h2>Summary:</h2>
-        <p>Experienced professional with a proven track record in managing businesses and leading teams to success.</p>
-        <p>Skilled in personal management, attention to detail, and effective communication.</p>
-        <p>Proficient in guiding teams through complex projects while maintaining high standards of quality and efficiency.</p>
-        <p>Adept at strategic thinking, problem-solving, and conflict resolution.</p>
-        <p>Seeking opportunities with forward-thinking companies to leverage my expertise in business management and people leadership to drive growth and achieve exceptional results.</p>
+    <main id="main">
+        <div class="container">
 
-    <h2>Skills:</h2>
-    <ul>
-        <strong>
-        <li>Personal Management</li>
-        <li>Attention to Detail</li>
-        <li>Supervisory Skills</li>
-        <li>Communication Skills</li>
-        <li>Visionary Leadership</li>
-        <li>Social Skills</li>
-        <li>Empathy</li>
-        <li>IT Proficiency (Windows, Office, Linux)</li>
-        <li>Budget Management</li>
-        <li>Presentation Skills</li>
-        <li>Effective Delegation</li>
-        <li>Problem Solving</li>
-        <li>Conflict Resolution</li>
-        <li>Integrity</li>
-        <li>Strategic Thinking</li>
-        <li>Negotiation</li>
-        <li>Decision Making</li>
-        <li>Crisis Management</li>
-        <li>Punctuality</li>
-        </strong>
-    </ul>
+            <header class="hero">
+                <div>
+                    <p class="hero-eyebrow">Curriculum Vitae</p>
+                    <h1 class="hero-title">Xander Theron</h1>
+                    <p class="hero-role">Operations &amp; people leader</p>
+                    <p class="hero-summary">
+                        Over a decade managing fire-safety services, campsites and facilities while
+                        leading small teams with care and precision — and today coordinating
+                        UCSA/VCSV youth ministry across Free State schools. Known for attention to
+                        detail, clear communication, and the calm to keep complex jobs moving, from
+                        stocktaking to school assemblies.
+                    </p>
+                    <ul class="hero-contact">
+                        <li><a href="mailto:xander.theron@gmail.com">xander.theron@gmail.com</a></li>
+                        <li><a href="https://github.com/Cea89585" rel="noopener">GitHub</a></li>
+                        <li><a href="https://xandertheron.wordpress.com/" rel="noopener">Blog</a></li>
+                        <li><span>South Africa</span></li>
+                    </ul>
+                </div>
+                <figure class="hero-photo">
+                    <img src="assets/portrait.jpg" alt="Portrait of Xander Theron" width="810" height="1080">
+                    <figcaption>Xander Theron</figcaption>
+                </figure>
+            </header>
 
-    <h2>Career Experience:</h2>
-    <h3>Manager</h3>
-    <p><strong>Millennium Fire, 2020 November - Present</strong></p>
-    <ul>
-        <li>Manage fire safety equipment services, maintenance, and supplies for businesses.</li>
-        <li>Provide guidance on fire and safety regulations.</li>
-        <li>Supervise a technician.</li>
-        <li>Responsible for company vehicle and own work.</li>
-    </ul>
+            <section aria-labelledby="skills-heading">
+                <p class="section-label" id="skills-heading">Skills</p>
+                <!-- Edit freely: add, remove or regroup skills here. -->
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Leadership &amp; People</h3>
+                        <p>Visionary leadership · team supervision · delegation · training &amp; mentoring · conflict resolution · empathy · crisis management</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Business &amp; Operations</h3>
+                        <p>Budget management · stocktaking &amp; logistics · dispatch &amp; receiving · facilities &amp; vehicle management · marketing</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Communication &amp; Delivery</h3>
+                        <p>Presentation skills · negotiation · decision making · problem solving · attention to detail · integrity · punctuality</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Technical</h3>
+                        <p>Windows · Microsoft Office · Linux · building software as a hobby (HTML, TypeScript, Node.js, Git)</p>
+                    </div>
+                </div>
+            </section>
 
-    <h3>Dispatch & Receiving</h3>
-    <p><strong>Scotty's Midas, 2020 January - 2020 November</strong></p>
-    <ul>
-        <li>Managed dispatching, receiving, and stocktaking.</li>
-        <li>Supervised drivers and routes.</li>
-        <li>Handled claims and vehicle maintenance.</li>
-    </ul>
+            <section aria-labelledby="experience-heading">
+                <p class="section-label" id="experience-heading">Career Experience</p>
+                <div class="timeline">
 
-    <h3>General Manager</h3>
-    <p><strong>Imla Guest Farm, 2019 March - 2019 October</strong></p>
-    <ul>
-        <li>Upgraded school camp facilities, including obstacle courses and tents.</li>
-        <li>Managed weddings and reception hall setup.</li>
-        <li>Oversaw bar management and stocktaking.</li>
-        <li>Conducted marketing via social media and Night Bridge system.</li>
-    </ul>
+                    <article class="role">
+                        <p class="role-year">2025 — Present</p>
+                        <div>
+                            <h3 class="role-title">Provincial Ministry Coordinator</h3>
+                            <p class="role-meta">UCSA / VCSV · Free State</p>
+                            <ul>
+                                <li>Coordinate youth ministry across the Free State, supporting UCSA/VCSV-affiliated schools.</li>
+                                <li>Lead school assemblies, camps and youth weeks, sharing the Gospel with young people.</li>
+                                <li>Visit affiliated schools regularly to build genuine relationships with learners and staff.</li>
+                            </ul>
+                        </div>
+                    </article>
 
-    <h3>Area Manager</h3>
-    <p><strong>Millenium Fire, 2014 May - 2019 February</strong></p>
-    <ul>
-        <li>Managed fire safety equipment services, maintenance, and supplies.</li>
-        <li>Provided fire training and safety support to businesses.</li>
-        <li>Supervised a technician.</li>
-        <li>Provided guidance on fire and safety regulations.</li>
-        <li>Managed company vehicle and own work.</li>
-    </ul>
+                    <article class="role">
+                        <p class="role-year">2020 — 2025</p>
+                        <div>
+                            <h3 class="role-title">Manager</h3>
+                            <p class="role-meta">Millennium Fire · South Africa</p>
+                            <ul>
+                                <li>Managed fire-safety equipment services, maintenance and supplies for business clients.</li>
+                                <li>Advised clients on fire and safety regulations.</li>
+                                <li>Supervised a field technician and managed the company vehicle and own work.</li>
+                            </ul>
+                        </div>
+                    </article>
 
-    <h3>Experiental Learning Teacher</h3>
-    <p><strong>Outdoor Centre, Zastron, 2013 January - 2014 May</strong></p>
-    <ul>
-        <li>Instructed leadership development and team building.</li>
-        <li>Planned programs for different groups.</li>
-        <li>Managed instructors and conducted stocktaking.</li>
-        <li>Handled crisis management.</li>
-    </ul>
+                    <article class="role">
+                        <p class="role-year">2020</p>
+                        <div>
+                            <h3 class="role-title">Dispatch &amp; Receiving</h3>
+                            <p class="role-meta">Scotty&rsquo;s Midas · 2020</p>
+                            <ul>
+                                <li>Ran dispatching, receiving and stocktaking for an automotive parts outlet.</li>
+                                <li>Supervised drivers and delivery routes.</li>
+                                <li>Handled claims and vehicle maintenance.</li>
+                            </ul>
+                        </div>
+                    </article>
 
-    <h3>UCSA/VCSV Manager</h3>
-    <p><strong>Eastern Cape, 2012 January - 2012 December</strong></p>
-    <ul>
-        <li>Managed campsite operations and marketing.</li>
-        <li>Conducted school visits and leadership development.</li>
-        <li>Maintained facilities and vehicles.</li>
-        <li>Organized activities such as abseiling, high ropes, and paintball.</li>
-    </ul>
+                    <article class="role">
+                        <p class="role-year">2019</p>
+                        <div>
+                            <h3 class="role-title">General Manager</h3>
+                            <p class="role-meta">Imla Guest Farm</p>
+                            <ul>
+                                <li>Upgraded school-camp facilities, including obstacle courses and tents.</li>
+                                <li>Managed weddings and reception-hall setup and bar operations.</li>
+                                <li>Grew bookings through social-media marketing and the Night Bridge system.</li>
+                            </ul>
+                        </div>
+                    </article>
 
-    <h3>Military Service</h3>
-    <p><strong>South Afrian National Defence Force, 2007 January - 2008 December</strong></p>
-    <ul>
-        <li>Completed two-year contract with rank of Private.</li>
-        <li>Received training in basic military skills, weapons, medical aid, and leadership.</li>
-    </ul>
+                    <article class="role">
+                        <p class="role-year">2014 — 2019</p>
+                        <div>
+                            <h3 class="role-title">Area Manager</h3>
+                            <p class="role-meta">Millennium Fire</p>
+                            <ul>
+                                <li>Managed fire-safety equipment services, maintenance and supplies across an area.</li>
+                                <li>Delivered fire training and safety support to business clients.</li>
+                                <li>Supervised a technician and guided clients on fire and safety regulations.</li>
+                            </ul>
+                        </div>
+                    </article>
 
-    <div style="margin-bottom: 100px;"></div>
+                    <article class="role">
+                        <p class="role-year">2013 — 2014</p>
+                        <div>
+                            <h3 class="role-title">Experiential Learning Teacher</h3>
+                            <p class="role-meta">Outdoor Centre · Zastron</p>
+                            <ul>
+                                <li>Instructed leadership development and team building for school groups.</li>
+                                <li>Planned programs for a wide range of groups and managed instructors.</li>
+                                <li>Handled stocktaking and crisis management onsite.</li>
+                            </ul>
+                        </div>
+                    </article>
 
-    <h2>Education:</h2>
-    <p><strong>Hoërskool Wonderboom Pretoria, 2006</strong></p>
-    <ul>
-        <li>Matriculated</li>
-        <li><strong>Subjects:</strong> Afrikaans, English, Computer Studies, Maths, Science, Carpentry</li>
-    </ul>
+                    <article class="role">
+                        <p class="role-year">2012</p>
+                        <div>
+                            <h3 class="role-title">UCSA / VCSV Manager</h3>
+                            <p class="role-meta">Eastern Cape</p>
+                            <ul>
+                                <li>Managed campsite operations, marketing and school visits.</li>
+                                <li>Ran leadership development and activities — abseiling, high ropes and paintball.</li>
+                                <li>Maintained facilities and vehicles.</li>
+                            </ul>
+                        </div>
+                    </article>
 
-    <div style="margin-bottom: 100px;"></div>
+                    <article class="role">
+                        <p class="role-year">2007 — 2008</p>
+                        <div>
+                            <h3 class="role-title">Military Service</h3>
+                            <p class="role-meta">South African National Defence Force</p>
+                            <ul>
+                                <li>Completed a two-year contract serving at the rank of Private.</li>
+                                <li>Trained in basic military skills, weapons handling, medical aid and leadership.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section aria-labelledby="education-heading">
+                <p class="section-label" id="education-heading">Education</p>
+                <div class="role">
+                    <p class="role-year">2006</p>
+                    <div>
+                        <h3 class="role-title">Matric — National Senior Certificate</h3>
+                        <p class="role-meta">Hoërskool Wonderboom · Pretoria</p>
+                        <ul>
+                            <li>Afrikaans · English · Computer Studies · Maths · Science · Carpentry</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section aria-labelledby="projects-heading">
+                <p class="section-label" id="projects-heading">Side Projects</p>
+                <!-- Add or remove projects as they evolve. -->
+                <ul class="projects-grid">
+                    <li class="project">
+                        <p class="project-meta">Open source</p>
+                        <h3>free-tv</h3>
+                        <p>A terminal IPTV player with an EPG TV guide for Linux, powered by the IPTV-org feeds.</p>
+                        <a href="https://github.com/Cea89585/free-tv" rel="noopener">View on GitHub →</a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
 
     <footer>
-        <p class="footer-text">&copy; 2024 Xander Theron. All rights reserved.</p>
-        <p class="footer-text">Contacts: xander.theron@gmail.com</p>
+        <div class="container">
+            <div class="footer-grid">
+                <p class="footer-name">Xander Theron</p>
+                <ul class="footer-links">
+                    <li><a href="certs.html">Certifications</a></li>
+                    <li><a href="https://github.com/Cea89585" rel="noopener">GitHub</a></li>
+                    <li><a href="mailto:xander.theron@gmail.com">Email</a></li>
+                </ul>
+            </div>
+            <p class="footer-legal">© 2024 Xander Theron. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

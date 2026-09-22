@@ -3,29 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post</title>
+    <title>Blog — Xander Theron</title>
+    <meta name="description" content="Xander Theron's blog — essays on leadership, management and the outdoor life.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="nav" aria-label="Primary">
+        <div class="container nav-inner">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="certs.html">Certifications</a></li>
+                <li><a href="blog.html" aria-current="page">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false"><span class="icon-dark">Dark</span><span class="icon-light">Light</span></button>
+            </div>
+        </div>
     </nav>
-    <header>
-        <h1>Blogs</h1>
-    </header>
-    <main>
-        <div class="centered-link">
-            <h2 class="blog-heading">Go here to read about me</h2>
-            <a href="https://xandertheron.wordpress.com/" class="blog-link">Visit my WordPress blog</a>
+
+    <main id="main">
+        <div class="container">
+            <header class="hero">
+                <div>
+                    <p class="hero-eyebrow">Blog</p>
+                    <h1 class="hero-title">Writing, occasionally</h1>
+                    <p class="hero-summary">
+                        I write about leadership, management and life outdoors — learnings from
+                        campsites, classrooms and boardrooms.
+                    </p>
+                </div>
+            </header>
+
+            <section class="blog-card">
+                <h2>Read my latest posts</h2>
+                <p>
+                    My writing lives on my WordPress blog. New posts appear there first —
+                    leadership lessons, behind-the-scenes stories from the places I&rsquo;ve worked,
+                    and thoughts on building teams that actually care.
+                </p>
+                <a class="blog-link" href="https://xandertheron.wordpress.com/" rel="noopener">Visit the blog →</a>
+            </section>
         </div>
     </main>
+
     <footer>
-        <p class="footer-text">&copy; 2024 Xander Theron. All rights reserved.</p>
-        <p class="footer-text">Contacts: xander.theron@gmail.com</p>
+        <div class="container">
+            <div class="footer-grid">
+                <p class="footer-name">Xander Theron</p>
+                <ul class="footer-links">
+                    <li><a href="certs.html">Certifications</a></li>
+                    <li><a href="https://github.com/Cea89585" rel="noopener">GitHub</a></li>
+                    <li><a href="mailto:xander.theron@gmail.com">Email</a></li>
+                </ul>
+            </div>
+            <p class="footer-legal">© 2024 Xander Theron. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
